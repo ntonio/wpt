@@ -1,0 +1,7 @@
+echo --------------------------------------------------------------------
+@Echo Deleting Custom.dic
+echo --------------------------------------------------------------------
+echo.
+del "C:\Users\%username%\AppData\Roaming\Microsoft\UProof\Custom.dic"
+ren "C:\Users\%username%\AppData\Roaming\Microsoft\UProof\Custom(1).dic" Custom.dic
+echo.
