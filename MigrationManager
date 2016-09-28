@@ -1,0 +1,9 @@
+@echo off
+echo ...Extracting Personality
+START /w \\SERVER\MigrationManager\MigrationManager.EXE /autoextract /IncludeUser %1 /config \\SERVER\MigrationManager\configuration.xml
+IF ERRORLEVEL 1 (echo Extraction failed) ELSE (echo Extraction succeeded)
+
+@echo off
+echo ...Injecting Personality
+START /w \\SERVER\MigrationManager\MigrationManager.EXE /autoinject /IncludeUser %1 /config \\SERVER\MigrationManager\onfiguration.xml
+IF ERRORLEVEL 1 (echo Injection failed) ELSE (echo Injection succeeded)
