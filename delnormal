@@ -1,0 +1,7 @@
+echo --------------------------------------------------------------------
+@Echo Deleting Normal.dot & Templates.
+echo --------------------------------------------------------------------
+echo.
+del "C:\Users\%username%\AppData\Roaming\Microsoft\Templates\Norma.dotm"
+ren "C:\Users\%username%\AppData\Roaming\Microsoft\Templates\Norma(1).dot" Norma.dotm
+echo.
